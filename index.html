@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anonymous Product Review</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f5f5f5;
+      background: #f9f9f9;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
     }
     h1 {
-      color: #333;
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    button {
+      background: #2d89ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1c6ed8;
     }
   </style>
 </head>
 <body>
-  <h1>hi boys girls whats going on</h1>
-  <p>This site is hosted for free on GitHub Pages.</p>
+
+  <h1>🗣️ Share Your Review</h1>
+
+  <form id="reviewForm" enctype="multipart/form-data">
+    <label for="product">Product Name (or Link)</label>
+    <input type="text" id="product" name="product" placeholder="Example: ABC Phone or Amazon link" required />
+
+    <label for="review">Your Review</label>
+    <textarea id="review" name="review" rows="6" placeholder="Write your honest opinion..." required></textarea>
+
+    <label for="image">Upload an Image (optional)</label>
+    <input type="file" id="image" name="image" accept="image/*" />
+
+    <button type="submit">Submit Review</button>
+  </form>
+
+  <p style="margin-top: 20px; font-size: 0.9em; text-align: center;">
+    🚫 No login required. Your voice matters. All reviews are public.<br>
+    Offensive or illegal content will be removed.
+  </p>
+
+  <script>
+    // This is a placeholder. You’ll connect this to your backend later.
+    document.getElementById('reviewForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Thank you for your review! (In real version, this will save to database)');
+    });
+  </script>
+
 </body>
 </html>
+
