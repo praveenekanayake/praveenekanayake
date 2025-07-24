@@ -1,0 +1,85 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3efe7;
+  color: #333;
+  padding: 40px 20px;
+}
+
+/* Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fffaf3;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #4a2c18;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Inputs and Textarea */
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #5a3e2b;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e0d2c0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #fffdf8;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #a8794f;
+  outline: none;
+  background-color: #fff8ec;
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #6f3e2e;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #572f22;
+}
+
+/* Footer note */
+p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  color: #666;
+}
