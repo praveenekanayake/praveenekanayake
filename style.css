@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
+  background-color: #f8f8f8;
   color: #333;
-  line-height: 1.6;
 }
 
 .container {
@@ -20,8 +19,8 @@ body {
 
 /* Header */
 header {
-  background: #111;
-  color: #fff;
+  background-color: #222;
+  color: white;
   padding: 20px 0;
 }
 
@@ -37,7 +36,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -46,62 +45,68 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Main Article */
-.main-article {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Main */
+main h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.main-article img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 10px;
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-/* Articles Grid */
-.articles {
+/* Product Grid */
+.products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.articles article {
-  background: #fff;
-  padding: 15px;
+.product-card {
+  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-.articles article img {
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
-.articles article h3 {
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.price {
+  color: #0077cc;
+  font-weight: bold;
   margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
-  background: #222;
+  background-color: #222;
   color: #ccc;
   text-align: center;
   padding: 20px 0;
