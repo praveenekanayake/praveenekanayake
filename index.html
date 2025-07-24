@@ -3,73 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anonymous Product Review</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-    }
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    input, textarea, button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-      font-size: 1rem;
-    }
-    button {
-      background: #2d89ff;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #1c6ed8;
-    }
-  </style>
-  <link rel="stylesheet" href="style.css">
-
+  <title>Daily News</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1 class="logo">📰 Daily News</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>🗣️ Share Your Review</h1>
+  <main class="container">
+    <section class="main-article">
+      <img src="https://source.unsplash.com/900x400/?news" alt="Main article">
+      <h2>Breaking: Major Global Event Shakes the World</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut erat in sapien gravida aliquam. Morbi facilisis...</p>
+      <a href="#" class="read-more">Read more →</a>
+    </section>
 
-  <form id="reviewForm" enctype="multipart/form-data">
-    <label for="product">Product Name (or Link)</label>
-    <input type="text" id="product" name="product" placeholder="Example: ABC Phone or Amazon link" required />
+    <section class="articles">
+      <article>
+        <img src="https://source.unsplash.com/300x200/?technology" alt="Tech">
+        <h3>Tech: New AI Tools Released</h3>
+        <p>Technology is evolving faster than ever before, with companies launching AI products daily...</p>
+      </article>
+      <article>
+        <img src="https://source.unsplash.com/300x200/?sports" alt="Sports">
+        <h3>Sports: Championship Highlights</h3>
+        <p>In an intense final, the underdogs pulled a historic win in extra time...</p>
+      </article>
+      <article>
+        <img src="https://source.unsplash.com/300x200/?weather" alt="Weather">
+        <h3>Weather: Extreme Heat Warnings</h3>
+        <p>Meteorologists warn of record-breaking temperatures in several regions this week...</p>
+      </article>
+    </section>
+  </main>
 
-    <label for="review">Your Review</label>
-    <textarea id="review" name="review" rows="6" placeholder="Write your honest opinion..." required></textarea>
-
-    <label for="image">Upload an Image (optional)</label>
-    <input type="file" id="image" name="image" accept="image/*" />
-
-    <button type="submit">Submit Review</button>
-  </form>
-
-  <p style="margin-top: 20px; font-size: 0.9em; text-align: center;">
-    🚫 No login required. Your voice matters. All reviews are public.<br>
-    Offensive or illegal content will be removed.
-  </p>
-
-  <script>
-    // This is a placeholder. You’ll connect this to your backend later.
-    document.getElementById('reviewForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('✅ Thank you for your review! (In real version, this will save to database)');
-    });
-  </script>
-
+  <footer>
+    <div class="container">
+      <p>© 2025 Daily News. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
+
 
